@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio - Blender & Substance Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Top Menu Bar -->
+        <header class="top-bar">
+            <div class="logo">
+                <i data-lucide="box"></i>
+            </div>
+            <nav class="menu">
+                <div class="menu-item-container">
+                    <span class="menu-item" id="menu-file">Arquivo</span>
+                    <div class="dropdown" id="dropdown-file">
+                        <a href="#">Baixar Currículo</a>
+                        <a href="mailto:your.email@example.com">Contato</a>
+                    </div>
+                </div>
+                <div class="menu-item-container">
+                    <span class="menu-item" id="menu-edit">Editar</span>
+                    <div class="dropdown" id="dropdown-edit">
+                        <a href="#" id="action-theme">Alternar Tema</a>
+                    </div>
+                </div>
+                <div class="menu-item-container">
+                    <span class="menu-item" id="menu-render">Renderizar</span>
+                    <div class="dropdown" id="dropdown-render">
+                        <a href="#" id="action-enhance">Realçar Imagem</a>
+                    </div>
+                </div>
+                <div class="menu-item-container">
+                    <span class="menu-item" id="menu-window">Janela</span>
+                    <div class="dropdown" id="dropdown-window">
+                        <a href="#" id="action-fullscreen">Tela Cheia</a>
+                    </div>
+                </div>
+                <div class="menu-item-container">
+                    <span class="menu-item" id="menu-help">Ajuda</span>
+                    <div class="dropdown" id="dropdown-help">
+                        <a href="#" id="action-about">Sobre o Portfólio</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="top-bar-right">
+                <span class="scene-name">Scene: Portfolio_V1</span>
+            </div>
+        </header>
+
+        <div class="workspace">
+
+
+            <!-- Main Viewport -->
+            <main class="viewport">
+
+                <div class="viewport-content" id="main-viewport">
+                    <img src="assets/Lança.jpg" alt="Lança" id="current-image">
+
+                    <!-- Overlay Info -->
+                    <div class="viewport-overlay">
+                        <h2 id="project-title">Lança</h2>
+                        <p id="project-desc">Arma de haste afiada com design detalhado.</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Contact Panel -->
+            <aside class="properties-panel">
+                <div class="panel-section flex-grow">
+                    <div class="panel-header">
+                        <i data-lucide="user"></i> Informações de Contato
+                    </div>
+                    <div class="properties-content">
+                        <div class="prop-group">
+                            <div class="prop-title">Sobre mim</div>
+                            <div class="details-box">
+                                <p>Artista 3D especializado na modelagem de objetos para jogos.
+                            </div>
+                        </div>
+
+                        <div class="prop-group">
+                            <div class="prop-title">Social & Links</div>
+                            <div class="details-box" style="display: flex; flex-direction: column; gap: 8px;">
+                                <a href="https://www.artstation.com/j-augusto-123" class="btn-primary"
+                                    style="margin-top:0; background-color: #05386b; display: flex; align-items: center; justify-content: center; gap: 8px;"><i
+                                        data-lucide="twitter" style="width:16px;height:16px;"></i> Artstation</a>
+                                <a href="#" class="btn-primary"
+                                    style="margin-top:0; background-color: #0A66C2; display: flex; align-items: center; justify-content: center; gap: 8px;"><i
+                                        data-lucide="linkedin" style="width:16px;height:16px;"></i> LinkedIn</a>
+                                <a href="#" class="btn-primary"
+                                    style="margin-top:0; background-color: #E1306C; display: flex; align-items: center; justify-content: center; gap: 8px;"><i
+                                        data-lucide="instagram" style="width:16px;height:16px;"></i> Instagram</a>
+                                <a href="mailto:your.email@example.com" class="btn-primary"
+                                    style="margin-top:0; display: flex; align-items: center; justify-content: center; gap: 8px;"><i
+                                        data-lucide="mail" style="width:16px;height:16px;"></i> Email Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Bottom Asset Browser / Timeline -->
+        <footer class="asset-browser">
+            <div class="panel-header">
+                <i data-lucide="folder-open"></i> Asset Browser / Gallery
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item active" data-img="assets/Lança.jpg" data-title="Lança"
+                    data-desc="Arma de haste afiada com design detalhado.">
+                    <img src="assets/Lança.jpg" alt="Lança">
+                    <span class="item-name">Lança</span>
+                </div>
+                <div class="gallery-item" data-img="assets/Arco e flecha.jpg" data-title="Arco e Flecha"
+                    data-desc="Arco com textura em madeira e corda tensionada.">
+                    <img src="assets/Arco e flecha.jpg" alt="Arco e Flecha">
+                    <span class="item-name">Arco e Flecha</span>
+                </div>
+                <div class="gallery-item" data-img="assets/Sniper.jpg" data-title="Sniper"
+                    data-desc="Rifle de precisão modelado em alta resolução.">
+                    <img src="assets/Sniper.jpg" alt="Sniper">
+                    <span class="item-name">Sniper</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
